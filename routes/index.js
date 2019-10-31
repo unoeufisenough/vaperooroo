@@ -16,5 +16,10 @@ router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Vaperooroo for my brooskerooroos' });
 });
 
+router.get('/htmlcourse', function(req, res, next) {
+  res.render('htmlcourse', { title: 'learn that html brooskii' });
+});
+
+
 
 module.exports = router;
