@@ -9,11 +9,15 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   //if you want to use a different layout for a page then use this:
   //res.render('about', { layout:'main',title: 'Vaperooroo for my brooskerooroos' });
-  res.render('about', { pageType:'about-page',title: 'About us page' });
+  res.render('about', { pageType:'about-page',title: 'We care about our vapes' });
 });
 
 router.get('/products', function(req, res, next) {
   res.render('products', { pageType:'products-page',title: 'Products page' });
+});
+
+router.get('/privacypolicy', function(req, res, next) {
+  res.render('privacypolicy', { pageType:'privacypolicy-page',title: 'Privacy Policy page' });
 });
 
 router.get('/contact', function(req, res, next) {
