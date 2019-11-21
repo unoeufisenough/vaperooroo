@@ -6,40 +6,32 @@ a {
   color: #00B7FF;
 }
 
+/********************* carousel **********************/
 .carousel-inner > .item >img{
   min-height : 300px;
   max-height : 300px;
   width : 100%;
 }
 
-.fa {
+/********************* Footer *******************/
+.fab {
   padding: 20px;
-  font-size: 30px;
+  font-size: 40px;
   width: 50px;
   text-align: center;
   text-decoration: none;
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
 .fa-instagram {
-  background: #dd4b39;
-  color: white;
+  color: #dd4b39;
 }
+/********************* title **********************/
 .title-container{
 margin-top:20px;
 margin-bottom:20px;
 }
 
-/********************* Shopping Demo-9 **********************/
+/********************* Products**********************/
 .product-grid9,.product-grid9 .product-image9{position:relative}
 .product-grid9{font-family:Poppins,sans-serif;z-index:1}
 .product-grid9 .product-image9 a{display:block}
