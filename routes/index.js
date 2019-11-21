@@ -3,21 +3,21 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { pageType:'home-page',title: 'Home Page' });
+  res.render('index', { pageType:'home-page',title: 'Vaperooroo' });
 });
 
 router.get('/about', function(req, res, next) {
   //if you want to use a different layout for a page then use this:
   //res.render('about', { layout:'main',title: 'Vaperooroo for my brooskerooroos' });
-  res.render('about', { pageType:'about-page',title: 'We care about our vapes' });
+  res.render('about', { pageType:'about-page',title: 'In Vape We Trust' });
 });
 
 router.get('/products', function(req, res, next) {
-  res.render('products', { pageType:'products-page',title: 'Products page' });
+  res.render('products', { pageType:'products-page',title: 'Our Products' });
 });
 
 router.get('/privacypolicy', function(req, res, next) {
-  res.render('privacypolicy', { pageType:'privacypolicy-page',title: 'Privacy Policy page' });
+  res.render('privacypolicy', { pageType:'privacypolicy-page',title: 'Privacy Policy' });
 });
 
 router.get('/contact', function(req, res, next) {
