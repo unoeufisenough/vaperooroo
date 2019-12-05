@@ -20,10 +20,14 @@ router.get('/privacypolicy', function(req, res, next) {
   res.render('privacypolicy', { pageType:'privacypolicy-page',title: 'Privacy Policy' });
 });
 
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { pageType:'contact-page',
-  title: 'Contact us',whoisadouche:"amngosah is a douche" });
+router.get('/Warranty', function(req, res, next) {
+  res.render('warranty', { pageType:'product-page', title: 'Warranty' });
 });
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { pageType:'contact-page', title: 'Contact us',whoisadouche:"amngosah is a douche" });
+});
+
 router.get('/news', function(req, res, next) {
   res.render('news', { pageType:'news-page',title: 'Our News'});
 });
@@ -37,6 +41,9 @@ router.get('/product/voopoodrag', function(req, res, next) {
 router.get('/product/drageroov120', function(req, res, next) {
   res.render('product', { pageType:'product-page', title: 'Drageroo v120 Brooskeroo edition' });
 });
+
+
+
 
 
 module.exports = router;
