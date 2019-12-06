@@ -25,25 +25,15 @@ router.get('/Warranty', function(req, res, next) {
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { pageType:'contact-page', title: 'Contact us',whoisadouche:"amngosah is a douche" });
+  res.render('contact', { pageType:'contact-page', title: 'Contact us' });
 });
 
 router.get('/news', function(req, res, next) {
   res.render('news', { pageType:'news-page',title: 'Our News'});
 });
 
-router.get('/product/aspire900', function(req, res, next) {
-  res.render('product', { pageType:'product-page', title: 'Aspire 900 mod black' });
+router.get('/product/smoknord', function(req, res, next) {
+  res.render('product', { pageType:'product-page', title: 'Vaperooroo: SMOK Nord' , productName: 'SMOK Nord', productPrice: '$40',productImage1:'https://www.electrictobacconist.com/images/smok-nord-p5831-15919_image.jpg' });
 });
-router.get('/product/voopoodrag', function(req, res, next) {
-  res.render('product', { pageType:'product-page', title: 'Voopoo drag 2 ulitmate' });
-});
-router.get('/product/drageroov120', function(req, res, next) {
-  res.render('product', { pageType:'product-page', title: 'Drageroo v120 Brooskeroo edition' });
-});
-
-
-
-
 
 module.exports = router;
