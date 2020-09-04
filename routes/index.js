@@ -49,7 +49,7 @@ router.get('/checkout', function(req, res, next) {
   res.render('checkout', { pageType:'checkout-page', title: 'Check Out'});
 });
 router.get('/signin', function(req, res, next) {
-  res.render('signin', { pageType:'signin-page', title: 'Sign In'});
+  res.render('signin', { pageType:'signin-page', title: 'Sign Up'});
 });
 
 module.exports = router;
