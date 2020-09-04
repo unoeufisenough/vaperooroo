@@ -20,7 +20,7 @@ router.get('/privacypolicy', function(req, res, next) {
   res.render('privacypolicy', { pageType:'privacypolicy-page',title: 'Privacy Policy' });
 });
 
-router.get('/Warranty', function(req, res, next) {
+router.get('/warranty', function(req, res, next) {
   res.render('warranty', { pageType:'product-page', title: 'Warranty' });
 });
 
@@ -44,6 +44,12 @@ router.get('/product/aspirezeloskit', function(req, res, next) {
 });
 router.get('/product/v2proseries3', function(req, res, next) {
   res.render('product', { pageType:'product-page', title: 'V2 Pro Series 3' , productName: 'V2 Pro Series 3', productPrice: '£50', productImage1:'https://www.theelectroniccigarette.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/e/tecc-apek-e-cig-kit-colour-swatches-.jpg', productImage2:'https://www.theelectroniccigarette.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/e/tecc-apek-e-cig-kit-red_2.jpg' , productImage3:'https://uploads.medicaljane.com/wp-content/uploads/2016/06/v2pro_front.png', productImage4:'https://cdn11.bigcommerce.com/s-5ce4b/images/stencil/1280x1280/products/143/2540/pro3-blue__23235.1544534438.jpg', productInfo:'The V2 Pro Series 3 from V2 is a fixed temperature liquid compatible, pen vaporizer. Manufactured in China, this product comes with a 6 month warranty for the electronics.' });
+});
+router.get('/checkout', function(req, res, next) {
+  res.render('checkout', { pageType:'checkout-page', title: 'Check Out'});
+});
+router.get('/signin', function(req, res, next) {
+  res.render('signin', { pageType:'signin-page', title: 'Sign In'});
 });
 
 module.exports = router;
