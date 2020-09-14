@@ -1,5 +1,7 @@
 var express = require('express');
+var React = require('react');
 var router = express.Router();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -50,6 +52,9 @@ router.get('/checkout', function(req, res, next) {
 });
 router.get('/signin', function(req, res, next) {
   res.render('signin', { pageType:'signin-page', title: 'Sign Up'});
+});
+router.get('/reacttest', function(req, res, next) {
+  res.render('reacttest', { pageType:'reacttest-page', title: 'React Test'});
 });
 
 module.exports = router;

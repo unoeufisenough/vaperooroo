@@ -1,11 +1,14 @@
 var createError = require('http-errors');
 var express = require('express');
+var React = require('react');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var favicon = require('serve-favicon');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+
 //var handlebarsHelpers = require('./views/helpers/helpers.js');
 var app = express();
 
